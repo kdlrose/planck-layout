@@ -1,6 +1,13 @@
 # my planck layout
 
-Used mostly for writing, light coding, and maybe soon a MIDI controller into MuseScore or something. Compiled on Alpine Linux using `qmk-cli`, but I flashed with QMK Toolbox on my MacBook Air for the very stupid reason that I couldn't run `qmk flash` while in bootloader mood without attaching a second keyboard and I couldn't be bothered.
+Used mostly for writing, light coding, and maybe soon a MIDI controller into MuseScore or something. Compiled on Alpine Linux using `qmk-cli`, but I flashed with QMK Toolbox on my MacBook Air for the very stupid reason that I couldn't run `qmk flash` while in bootloader mode without attaching a second keyboard and I couldn't be bothered.
+
+### the hardware
+- Drop + OLKB Planck v7
+- polycarbonate case
+- steel switch plate
+- Gateron KS-3 Milky Yellow Pro
+- MIT layout (1x2uC)
 
 ## layers
 
@@ -14,7 +21,7 @@ The only real differences from the default are no alternate alpha layouts and ad
 
 ## pipe dreams
 
-- [ ] a MIDI layer that idk, can be transposed? or I just want it to start at C2 because I'm a cellist, sue me. and why don't the last four keys of the bottom row work
+- [ ] a MIDI layer that idk, can be transposed? or I just want it to start a fifth lower than default because I'm a cellist
 - [ ] I want to get rid of the arrows on the Qwerty base and just use my VIM layer, but I'm also at a loss for what can go down there instead.
 - [ ] moving the function keys to the top row of their own layer. I hardly use them anyway/haven't figured out how to enable them on my Linux laptop.
 - [ ] figuring out how mod combos work so I can get macOS-like special characters by Alt+Shift (I just need an em dash)
