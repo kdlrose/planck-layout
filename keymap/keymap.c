@@ -72,7 +72,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         MI_E,       MI_F,       MI_Fs,      MI_G,       MI_Gs,      MI_A,       MI_As,      MI_B,       MI_C1,      MI_Cs1,     MI_D1,      MI_Ds1,
         FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    LOWER,      VIM,        KC_SPC,     RAISE,      CELLO,      MI_OCTD,    MI_OCTU,    GUITAR
     )
-    /* actual
+    /* what this actually plays
+    [_CELLO] = LAYOUT_planck_grid(
+        MI_C5,      MI_Cs5,     MI_D5,      MI_Ds5,     MI_E5,      MI_F5,      MI_Fs5,     MI_G5,      MI_Gs5,     MI_A5,      MI_As5,     MI_B5,
+        MI_C4,      MI_Cs4,     MI_D4,      MI_Ds4,     MI_E4,      MI_F4,      MI_Fs4,     MI_G4,      MI_Gs4,     MI_A4,      MI_As4,     MI_B4,
+        MI_C3,      MI_Cs3,     MI_D3,      MI_Ds3,     MI_E3,      MI_F3,      MI_Fs3,     MI_G3,      MI_Gs3,     MI_A3,      MI_As3,     MI_B3,
+        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    LOWER,      VIM,        KC_SPC,     RAISE,      CELLO,      MI_OCTD,    MI_OCTU,    GUITAR
+    ),
+    [_GUITAR] = LAYOUT_planck_grid(
+        MI_E5,      MI_F5,      MI_Fs5,     MI_G5,      MI_Gs5,     MI_A5,      MI_As5,     MI_B5,      MI_C6,      MI_Cs6,     MI_D6,      MI_Ds6,
+        MI_E4,      MI_F4,      MI_Fs4,     MI_G4,      MI_Gs4,     MI_A4,      MI_As4,     MI_B4,      MI_C5,      MI_Cs5,     MI_D5,      MI_Ds5,
+        MI_E3,      MI_F3,      MI_Fs3,     MI_G3,      MI_Gs3,     MI_A3,      MI_As3,     MI_B3,      MI_C4,      MI_Cs4,     MI_D4,      MI_Ds4,
+        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    LOWER,      VIM,        KC_SPC,     RAISE,      CELLO,      MI_OCTD,    MI_OCTU,    GUITAR
+    )
+    */
+    /* what I wanted
     [_CELLO] = LAYOUT_planck_grid(
         MI_C4,      MI_Cs4,     MI_D4,      MI_Ds4,     MI_E4,      MI_F4,      MI_Fs4,     MI_G4,      MI_Gs4,     MI_A4,      MI_As4,     MI_B4,
         MI_C3,      MI_Cs3,     MI_D3,      MI_Ds3,     MI_E3,      MI_F3,      MI_Fs3,     MI_G3,      MI_Gs3,     MI_A3,      MI_As3,     MI_B3,
