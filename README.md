@@ -1,24 +1,25 @@
 # my planck layout
 
-Used mostly for writing, light coding, and sometimes an MIDI controller for
-arrangment (not production). Compiled on Alpine Linux with `qmk-cli`, but
-flashed on macOS with QMK Toolbox since the CLI didn't believe it was in DFU
-mode.
+Used mostly for writing, light coding, and sometimes as MIDI input for
+arrangement and scoring (not production). Compiled on Alpine Linux with
+`qmk-cli`, but flashed on macOS QMK Toolbox since the CLI didn't believe it was
+in DFU mode.
 
 ### hardware
+
 Drop + OLK Planck v7, polycarbonate case and steel switch plate, Gateron KS-3
 Milk Yellow Pros
 
 ### layers
 
-1. QWERTY base
-2. Lower: symbols, delete, media controls
-3. Raise: numbers, more symbols
-4. Vim: vi-style navigation with haphazard home/page/end around
-5. Function: only use these on my MacBook Air and rarely
-6. Adjust: RGB and audio, midi settings
-7. Cello: 3 octaves from C2, see issues
-8. Guitar: 3 octaves from E2, see issues
+1. **Base**: QWERTY
+2. **Lower**: symbols, delete, media controls
+3. **Raise**: numbers, more symbols
+4. **Vim**: vi-style navigation with haphazard home/page/end around
+5. **Function**: only use these on my MacBook Air and rarely
+6. **Adjust**: RGB and audio, midi settings
+7. **Cello**: 3 octaves from C2, see issues
+8. **Guitar**: 3 octaves from E2, see issues
 
 ## issues 
 
