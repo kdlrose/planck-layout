@@ -18,8 +18,8 @@ Milk Yellow Pros
 4. **Vim**: vi-style navigation with haphazard home/page/end around
 5. **Function**: only use these on my MacBook Air and rarely
 6. **Adjust**: RGB and audio, midi settings
-7. **Cello**: 3 octaves from C2, see issues
-8. **Guitar**: 3 octaves from E2, see issues
+7. **Cello**: 3 octaves from C3 😡, see issues
+8. **Guitar**: 3 octaves from E3, see issues
 
 ## issues 
 
