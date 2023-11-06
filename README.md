@@ -23,10 +23,10 @@ Milk Yellow Pros
 
 ## issues 
 
-- `MIDI_ADVANCED` pitches are two octaves too high. This is too weird an issue
+- `MIDI_ADVANCED` pitches are three octaves too high. This is too weird an issue
   for me to fathom. From looking at other Plancks configured as MIDI
-  controllers, I guess it's unique to the rev7. My fix is writing `keymap.c` two
-  octaves down, and I was always planning to add `MI_OCTU` and `MI_OCTD`. It's
+  controllers, I guess it's unique to the rev7. My fix is writing `keymap.c` as
+  low as possible, and I was always planning to add `MI_OCTU` and `MI_OCTD`. It's
   not disastrous, but it's both inaccurate and more annoying to someone else who
   might need really low bass.
 
