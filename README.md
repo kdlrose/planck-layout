@@ -2,15 +2,12 @@
 
 Used mostly for writing, light coding, and sometimes an MIDI controller for
 arrangment (not production). Compiled on Alpine Linux with `qmk-cli`, but
-flashed on macOS with QMK Toolbox for the very stupid reason that I can't figure
-out how to run `qmk flash` in bootloader mode or enter bootloader after running
-it without attaching a second keyboard.
+flashed on macOS with QMK Toolbox since the CLI didn't believe it was in DFU
+mode.
 
 ### hardware
-- Drop + OLKB Planck v7
-- polycarbonate case
-- steel switch plate
-- Gateron KS-3 Milky Yellow Pro
+Drop + OLK Planck v7, polycarbonate case and steel switch plate, Gateron KS-3
+Milk Yellow Pros
 
 ### layers
 
@@ -25,10 +22,12 @@ it without attaching a second keyboard.
 
 ## issues 
 
-- MIDI_ADVANCED pitches are off by two octaves. From checking out other Planck
-  source codes and QMK midi controllers in general, this seems unique to the 
-  rev7. My fix is writing `keymap.c` two octaves down, but this is both
-  inaccurate and untenable for anyone who needs subterranean bass notes.
+- `MIDI_ADVANCED` pitches are two octaves too high. This is too weird an issue
+  for me to fathom. From looking at other Plancks configured as MIDI
+  controllers, I guess it's unique to the rev7. My fix is writing `keymap.c` two
+  octaves down, and I was always planning to add `MI_OCTU` and `MI_OCTD`. It's
+  not disastrous, but it's both inaccurate and more annoying to someone else who
+  might need really low bass.
 
 ### tasks
 
