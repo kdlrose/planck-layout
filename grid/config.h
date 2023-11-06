@@ -9,3 +9,5 @@
 #endif
 
 #define MIDI_ADVANCED
+
+#define PLANCK_WATCHDOG_TIMEOUT 1.0
