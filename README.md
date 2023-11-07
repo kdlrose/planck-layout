@@ -18,7 +18,9 @@ Milk Yellow Pros
 
 ![0 qwerty](https://github.com/sailorfe/planck-layout/blob/main/assets/0-base.png?raw=true)
 
-Pretty much the default, but with additional Function and Vim modifiers. I dream of getting rid of the arrows, but can't think of what to replace them with. I don't actually code enough to want brackets on my base.
+Pretty much the default, but with additional Function and Vim modifiers. I
+dream of getting rid of the arrows, but can't think of what to replace them with.
+I don't actually code enough to want brackets on my base.
 
 ### Lower // shifted symbols
 
@@ -34,13 +36,13 @@ I want to add unicode symbols like Mac's `option` shortcuts, mainly em and en da
 
 ![3 vim](https://github.com/sailorfe/planck-layout/blob/main/assets/3-vim.png?raw=true)
 
-I'm trying to approximate Vim's `G` and `gg` shortcuts plus `Ctrl + b` and `Ctrl + f` for page navigation. Also threw in Vim and non-Vim shortcuts like Z for undo, just in case?
+I'm trying to approximate Vim's `G` and `gg` shortcuts plus `Ctrl + b` and `Ctrl 
++ f` for page navigation. Also threw in `Esc` since I'm not sure I know what key
+transparency actually points to.
 
 ### Function and numpad
 
-![4 fn](https://github.com/sailorfe/planck-layout/blob/main/assets/4-function.png?raw=true)
-
-Not entirely convinced I need either of these, but the numpad is more likely to see use if I ever get back into writing knitting patterns.
+![4 fn](https://github.com/sailorfe/planck-layout/blob/main/assets/4-fn-pad.png?raw=true)
 
 ### Adjust
 
@@ -50,18 +52,25 @@ Nearly the default except I added `EE_CLR`, MIDI on/off, and toggles for my two 
 
 ### MIDI_ADVANCED instruments
 
-![6 cello](https://github.com/sailorfe/planck-layout/blob/main/assets/6-midi-cello.png?raw=true)
+![6 cello](https://github.com/sailorfe/planck-layout/blob/main/assets/6-midi.png?raw=true)
 
-![7 guitar](https://github.com/sailorfe/planck-layout/blob/main/assets/6-midi-guitar.png?raw=true)
+I found this profoundly confusing and the documentation quite sparse, and it
+doesn't help that I've never owned a MIDI controller before. I assumed QMK
+followed scientific pitch, so I created a layer each starting with the lowest
+open strings in standard tuning for my instruments (C2 and E2), but these played
+C5 and E5 while `MI_C4` played C7 rather than middle C. Then I actually read
+every row of the keycodes table and saw the pitch codes stopped at `MI_Fs5`. I
+ended up with this palette of pitch shift options, the most used one being
+`MI_OC1` to get me into bass clef.
 
-See issues.
+You might wonder why I bother with two layers. Practically, I'm usually
+arranging bedroom pop bullshit for cello and guitar and switch between the two
+quickly. But I am also just very confused. I tried `LM(layer, mod)` since I
+often hit undo and copy and such while scoring, but it doesn't seem to work so
+far.
 
-## issues 
+## tasks
 
-- `MIDI_ADVANCED` pitches are three octaves too high. This is too weird an issue
-  for me to fathom. From looking at other Plancks configured as MIDI
-  controllers, I guess it's unique to the rev7. My fix is writing `keymap.c` as
-  low as possible, and I was always planning to add `MI_OCTU` and `MI_OCTD`. It's
-  not disastrous, but it's both inaccurate and more annoying to someone else who
-  might need really low bass.
-
+- [  ] Unicode characters on the symbols layer. All I really want are my em and
+  en dashes, and maybe curly quotes.
+- [  ] Trouble shoot layer + mod
