@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    ADJUST,     VIM,        KC_SPC,     _______,    KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_MPLY
     ),
     [_VIM] = LAYOUT_planck_grid(
-        _______,    KC_Q,       KC_W,       _______,    _______,    KC_PERC,    KC_Y,       KC_U,       _______,     _______,   KC_P,       _______,
-        KC_ESC,     _______,    _______,    _______,    KC_PGDN,    KC_HOME,    KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,    KC_COLN,    _______,
-        _______,    KC_Z,       KC_DEL,     KC_C,       _______,    KC_PGUP,    KC_END,     _______,    _______,    _______,    KC_SLSH,    _______,
+        _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
+        KC_ESC,     _______,    _______,    _______,    KC_PGDN,    KC_HOME,    KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,    _______,    _______,
+        _______,    _______,    _______,    _______,    _______,    KC_PGUP,    KC_END,     _______,    _______,    _______,    _______,    _______,
         FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    LOWER,      _______,    KC_SPC,     RAISE,      KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_MPLY
     ),
     [_FUNCTION] = LAYOUT_planck_grid(
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX,    QK_BOOT,    DB_TOGG,    RGB_TOG,    RGB_MOD,    RGB_HUI,    RGB_HUD,    RGB_SAI,    RGB_SAD,    RGB_VAI,    RGB_VAD,    XXXXXXX,
         EE_CLR,     XXXXXXX,    MU_NEXT,    AU_ON,      AU_OFF,     XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
         XXXXXXX,    AU_NEXT,    AU_PREV,    MU_ON,      MU_OFF,     MI_ON,      MI_OFF,     XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    _______,    VIM,        KC_SPC,     _______,    CELLO,      KC_DOWN,    KC_UP,      GUITAR
+        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    _______,    VIM,        KC_SPC,     _______,    CELLO,      KC_VOLD,    KC_VOLU,    GUITAR
     ),
     [_CELLO] = LAYOUT_planck_grid(
         MI_C2,      MI_Cs2,     MI_D2,      MI_Ds2,     MI_E2,      MI_F2,      MI_Fs2,     MI_G2,      MI_Gs2,     MI_A2,      MI_As2,     MI_B2,
