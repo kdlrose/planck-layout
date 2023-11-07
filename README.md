@@ -22,13 +22,13 @@ Pretty much the default, but with additional Function and Vim modifiers. I
 dream of getting rid of the arrows, but can't think of what to replace them with.
 I don't actually code enough to want brackets on my base.
 
-### Lower // shifted symbols
+### Symbols
 
 ![1 lower](https://github.com/sailorfe/planck-layout/blob/main/assets/1-symbols.png?raw=true)
 
 I want to add unicode symbols like Mac's `option` shortcuts, mainly em and en dash.
 
-### Raise // numbers
+### Numbers
 
 ![2 raise](https://github.com/sailorfe/planck-layout/blob/main/assets/2-numbers.png?raw=true)
 
@@ -36,9 +36,9 @@ I want to add unicode symbols like Mac's `option` shortcuts, mainly em and en da
 
 ![3 vim](https://github.com/sailorfe/planck-layout/blob/main/assets/3-vim.png?raw=true)
 
-I'm trying to approximate Vim's `G` and `gg` shortcuts plus `Ctrl + b` and `Ctrl 
-+ f` for page navigation. Also threw in `Esc` since I'm not sure I know what key
-transparency actually points to.
+I'm trying to approximate Vim's `G` and `gg` shortcuts plus `Ctrl + b` and
+`Ctrl + f` for page navigation. Also threw in `Esc` since I'm not sure I know
+what key transparency actually points to.
 
 ### Function and numpad
 
@@ -48,7 +48,8 @@ transparency actually points to.
 
 ![5 adjust](https://github.com/sailorfe/planck-layout/blob/main/assets/5-adjust.png?raw=true)
 
-Nearly the default except I added `EE_CLR`, MIDI on/off, and toggles for my two MIDI layers so far.
+Nearly the default except I added `EE_CLR`, MIDI on/off, and toggles for my two
+MIDI layers so far.
 
 ### MIDI_ADVANCED instruments
 
