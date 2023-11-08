@@ -18,51 +18,54 @@ enum planck_keycodes {
 #define LOWER   MO(_LOWER)
 #define RAISE   MO(_RAISE)
 #define VIM     MO(_VIM)
+#define WM      MO(_WINMGR)
 #define FN      MO(_FUNCTION)
 #define ADJUST  MO(_ADJUST)
 #define CELLO   TG(_CELLO)
 #define GUITAR  TG(_GUITAR)
-
-#define TEMPCTL LM(_QWERTY, MOD_LCTL)
-#define TEMPGUI LM(_QWERTY, MOD_LGUI)
-#define TEMPALT LM(_QWERTY, MOD_LALT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT_planck_grid(
         KC_TAB,     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,       KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       KC_BSPC,
         KC_ESC,     KC_A,       KC_S,       KC_D,       KC_F,       KC_G,       KC_H,       KC_J,       KC_K,       KC_L,       KC_SCLN,    KC_QUOT,
         KC_LSFT,    KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,       KC_N,       KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,    KC_ENT,
-        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    LOWER,      VIM,        KC_SPC,     RAISE,      KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT
+        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    LOWER,      VIM,        KC_SPC,     RAISE,      WM,         KC_RGUI,
     ),
     [_LOWER] = LAYOUT_planck_grid(
         KC_TILD,    KC_EXLM,    KC_AT,      KC_HASH,    KC_DLR,     KC_PERC,    KC_CIRC,    KC_AMPR,    KC_ASTR,    KC_LPRN,    KC_RPRN,    _______,
         KC_DEL,     _______,    _______,    _______,    _______,    _______,    _______,    KC_UNDS,    KC_PLUS,    KC_LCBR,    KC_RCBR,    KC_PIPE,
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
-        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    _______,    VIM,        KC_SPC,     ADJUST,     KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_MPLY
+        _______,    _______,    _______,    _______,    _______,    _______,    _______,    ADJUST,     KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_MPLY
     ),
     [_RAISE] = LAYOUT_planck_grid(
         KC_GRV,     KC_1,       KC_2,       KC_3,       KC_4,       KC_5,       KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       _______,
-        _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_MINS,    KC_EQL,     KC_LBRC,    KC_RBRC,    KC_BSLS,
+        KC_DEL,     _______,    _______,    _______,    _______,    _______,    _______,    KC_MINS,    KC_EQL,     KC_LBRC,    KC_RBRC,    KC_BSLS,
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
-        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    ADJUST,     VIM,        KC_SPC,     _______,    KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_MPLY
+        _______,    _______,    _______,    _______,    ADJUST,     _______,    _______,    _______,    KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_MPLY
     ),
     [_VIM] = LAYOUT_planck_grid(
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
-        KC_ESC,     _______,    _______,    _______,    KC_PGDN,    KC_HOME,    KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,    _______,    _______,
+        KC_ESC,     _______,    _______,    _______,    KC_PGDN,    KC_HOME,    KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,    KC_COLN,    _______,
         _______,    _______,    _______,    _______,    _______,    KC_PGUP,    KC_END,     _______,    _______,    _______,    _______,    _______,
-        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    LOWER,      _______,    KC_SPC,     RAISE,      KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_MPLY
+        _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______
     ),
+    [_WINMGR] = LAYOUT_planck_grid(
+        _______,    SGUI(KC_Q), _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
+        _______,    _______,    _______,    _______,    _______,    _______,    SGUI(KC_LEFT), SGUI(KC_DOWN), SGUI(KC_UP), SGUI(KC_RIGHT),  _______,
+        _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
+        _______,    _______,    _______,    _______,    _______,    _______,    SGUI(KC_SPC), _______,  _______,    _______,    _______,    _______
+    )
     [_FUNCTION] = LAYOUT_planck_grid(
         _______,    KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,      _______,    KC_7,       KC_8,       KC_9,       KC_SLSH,
         _______,    KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_F11,     KC_F12,     _______,    KC_4,       KC_5,       KC_6,       KC_ASTR,
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_1,       KC_2,       KC_3,       KC_MINS,
-        _______,    KC_LCTL,    KC_LGUI,    KC_LALT,    LOWER,      VIM,        KC_SPC,     RAISE,      KC_DOT,     KC_0,       KC_ENT,     KC_PLUS 
+        _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_DOT,     KC_0,       KC_ENT,     KC_PLUS 
     ),
     [_ADJUST] = LAYOUT_planck_grid(
         XXXXXXX,    QK_BOOT,    DB_TOGG,    RGB_TOG,    RGB_MOD,    RGB_HUI,    RGB_HUD,    RGB_SAI,    RGB_SAD,    RGB_VAI,    RGB_VAD,    XXXXXXX,
         EE_CLR,     XXXXXXX,    MU_NEXT,    AU_ON,      AU_OFF,     XXXXXXX,    XXXXXXX,    GUITAR,     XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
         XXXXXXX,    AU_NEXT,    AU_PREV,    MU_ON,      MU_OFF,     MI_ON,      MI_OFF,     CELLO,      XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
-        FN,         KC_LCTL,    KC_LGUI,    KC_LALT,    _______,    VIM,        KC_SPC,     _______,    KC_MUTE,    KC_VOLD,    KC_VOLU,    KC_MPLY
+        _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______
     ),
     [_CELLO] = LAYOUT_planck_grid(
         MI_C2,      MI_Cs2,     MI_D2,      MI_Ds2,     MI_E2,      MI_F2,      MI_Fs2,     MI_G2,      MI_Gs2,     MI_A2,      MI_As2,     MI_B2,
